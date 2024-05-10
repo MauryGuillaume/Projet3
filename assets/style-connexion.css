@@ -1,0 +1,52 @@
+body section h1 {
+    color: #1D6154;
+    margin-bottom: 30px;
+}
+
+body section {
+    text-align: center;
+    margin: 300px 0px;
+}
+
+header nav a {
+	text-decoration: none;
+    font-weight: 600;
+}
+
+body section button[type="submit"] {
+    border-radius: 20px;
+    background-color: #1D6154;
+    color: white;
+    padding: 10px 40px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+body section form input {
+    margin: 5px 0px 20px 0px;
+    height: 40px;
+    width: 300px;
+    border: none;
+    box-shadow: -5px 0px 20px 5px rgba(128, 128, 128, 0.062), 5px 0px 20px 5px rgba(128, 128, 128, 0.062); 
+}
+
+body section .formulaire form {
+    margin: 20px;
+} 
+
+body section .formulaire {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    flex-direction: column;
+}
+
+#bad-connection {
+    border: red 2px solid;
+    color: red;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-weight: bold;
+}

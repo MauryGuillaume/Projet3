@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Sophie Bluel - Architecte d'intérieur</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+<header>
+	<h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
+	<nav>
+		<ul>
+			<li>projets</li>
+			<li>contact</li>
+			<li id="hidden-login"><a href="connexion.html">login</a></li>
+			<li id="hidden-logout"><a href="index.html" id="logout">Logout</a></li>
+			<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
+		</ul>
+	</nav>
+</header>
+<main>
+	<section id="introduction">
+		<figure>
+			<img src="./assets/images/sophie-bluel.png" alt="">
+		</figure>
+		<article>
+			<h2>Designer d'espace</h2>
+			<p>Je raconte votre histoire, je valorise vos idées. Je vous accompagne de la conception à la livraison finale du chantier.</p>
+			<p>Chaque projet sera étudié en commun, de façon à mettre en valeur les volumes, les matières et les couleurs dans le respect de l’esprit des lieux et le choix adapté des matériaux. Le suivi du chantier sera assuré dans le souci du détail, le respect du planning et du budget.</p>
+			<p>En cas de besoin, une équipe pluridisciplinaire peut-être constituée : architecte DPLG, décorateur(trice)</p>
+		</article>
+	</section>
+	<section id="portfolio">
+		<div class="projet">
+			<h2>Mes Projets</h2>
+			<a href="#modal1" id="hidden-modifier" class="jsModal"><img src="./assets/icons/editer.png"> modifier</a>
+		</div>
+		<div class="center-filter">
+			<div id="button">
+			</div>
+		</div>
+		<div id="gallery">
+			
+		</div>
+		<button type="submit" id="LOGIN" style="display:none;">Se connecter</button>
+		
+		
+	</section>
+	<section id="contact">
+		<h2>Contact</h2>
+		<p>Vous avez un projet ? Discutons-en !</p>
+		<form action="#" method="post">
+			<label for="name">Nom</label>
+			<input type="text" name="name" id="name">
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email">
+			<label for="message">Message</label>
+			<textarea name="message" id="message" cols="30" rows="10"></textarea>
+			<input type="submit" value="Envoyer">
+		</form>
+	</section>
+	<aside id="modal1" class="modal" aria-hidden="true" role="dialog" style="display: none;">
+		<div class="modal-wrapper js-stop">
+			<div class="modal1-btn">
+				<a class="js-close">✖</a>
+			</div>
+			<div class="modal1-complete">
+				<h2>Galerie photo</h2>
+				<div id="modalImg">
+
+				</div>
+				<div class="ajout-photos">
+					<button class="btn-ajout-photos">Ajouter une photo</button>
+				</div>
+			</div>
+		</div>
+	</aside>
+	<aside id="modal2" class="modal" aria-hidden="true" role="dialog" style="display: none;">
+		<div class="modal-wrapper js-stop">
+			<div class="modal2-btn">
+				<a class="js-back" href="#modal1">🠔</a>
+				<a class="js-close">✖</a>
+			</div>
+			<div class="modal2-complete">
+				<h2>Ajout photo</h2>
+				<form action="#" method="post" id="ajout-photo">
+					<div id="drop-container-form">
+						<label for="images" class="drop-container" id="dropcontainer">
+							<img src="./assets/icons/image.png" class="img-image">
+							<p>+ Ajouter une photo</p>
+							<input type="file" id="images" name="image" style="position: absolute; width: 0; height: 0; opacity: 0;" accept="image/*" required>
+							<label>jpg, png : 4mo max</label>
+						</label>
+						<div id="img-container">
+							<img id="img-preview" src="#" alt="Aperçu de l'image" style="display: none;">
+						</div>
+					</div>
+					<label for="Titre" id="title">Titre</label>
+					<input type="text" name="title" id="titre" required>
+					<label for="Categorie" id="categories-modal">Catégorie</label>
+					<select name="category" id="categories" required>
+						<option value="#"></option>
+						
+					</select>
+					<div class="barre"></div>
+					<input type="submit" value="Valider" id="SubmitBtn">
+				</div>
+			</div>
+		</div>
+	</aside>
+</main>
+
+<footer>
+	<nav>
+		<ul>
+			<li>Mentions Légales</li>
+		</ul>
+	</nav>
+</footer>
+</body>
+<script type="text/javascript" src="index.js"></script>
+</html>
